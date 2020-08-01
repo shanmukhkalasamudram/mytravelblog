@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+
+
+
+    header{
+        background-color: lightgray ;
+        padding: 20px;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        top: 0px;
+        left: 0px;
+        }
+
+    h1{
+        color:black;
+        background-color: fff;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        
+    
+        border: 8px solid crimson;
+        padding: 6px 12px;
+        display: inline-block;
+        border-radius: 24px;
+    
+    }
+
+    #navbar ul {
+        width: 90%;
+        position: fixed;
+        margin: 0;
+        padding: 5px;
+        list-style-type: none;
+        text-align: right;
+        background-color: #000;
+      }
+      
+      #navbar ul li {
+        display: inline;
+      }
+      
+      #navbar ul li a {
+        text-decoration: none;
+        font-size: 30px;
+        padding: 0.2em 1em;
+        color: #fff;
+        background-color: #000;
+      }
+      
+      #navbar ul li a:hover {
+        color: #000;
+        background-color: #fff;
+      }
+
+      .intro{
+        position: relative;
+        
+    
+    }
+    .intro .welcome{
+        color: whitesmoke;
+        
+        position: absolute;
+        padding: 10px;
+        left: 80px;
+        top: 150px;
+        
+    }
+
+    .intro h3{
+        font-size: 30px;
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 45px;
+        position: absolute;
+        padding: 10px;
+        left: 80px;
+        top: 200px;
+           
+        
+    }
+    .intro h2 {
+        font-size: 50px;
+        font-style: normal;
+    }
+
+
+    .about img {
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      left: 50px;
+
+    }
+    .about h2 {
+      font-size: 30px;
+      font-style: normal;
+      position: absolute;
+     left: 750px;
+     
+    }
+    .about h3 {
+      font-size: 30px;
+      font-style: normal;
+      position: absolute;
+    
+      top: 1250px;
+      left: 700px;
+
+    }
+
+
+
+    .container {
+        margin: auto;
+        overflow: auto;
+      }
+
+
+
+      .card {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        background: transparent;
+        margin-left: 100px;
+        margin-bottom: 2rem;
+      }
+      
+      .card h3 {
+        margin-bottom: 2rem;
+      }
+      
+      .card img {
+        height: 300px;
+        width: 350px;
+      }
+      
+      .card > div {
+        padding: 2rem;
+      }
+
+
+
+      .card:nth-child(even) img {
+        order: 2;
+      }
+      
+      .btn {
+        display: inline-block;
+        background: #000;
+        color: #fff;
+        padding: 0.8rem 1.8rem;
+        margin-top: 2rem;
+        cursor: pointer;
+      }
+      
+      .btn:hover {
+        opacity: 0.8;
+      }
+      
+      @media (max-width: 600px) {
+        .card {
+          display: block;
+        }
+      }
+
+
+      .wrapper{
+        position: absolute;
+        top: 3300px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: 550px;
+        background: rgba(0,0,0,0.8);
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      }
+      
+      .wrapper .title h1{
+        color: #c5ecfd;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      
+      .contact-form{
+        display: flex;
+      }
+      
+      .input-fields{
+        display: flex;
+        flex-direction: column;
+        margin-right: 4%;
+      }
+      
+      .input-fields,
+      .msg{
+        width: 48%;
+      }
+      
+      .input-fields .input,
+      .msg textarea{
+        margin: 10px 0;
+        background: transparent;
+        border: 0px;
+        border-bottom: 2px solid #c5ecfd;
+        padding: 10px;
+        color: #c5ecfd;
+        width: 100%;
+      }
+      
+      .msg textarea{
+        height: 212px;
+      }
+      
+      ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #c5ecfd;
+      }
+      ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #c5ecfd;
+      }
+      :-ms-input-placeholder {
+        /* IE 10+ */
+        color: #c5ecfd;
+      }
+      
+      .btn {
+          background: #39b7dd;
+          text-align: center;
+          padding: 15px;
+          border-radius: 5px;
+          color: #fff;
+          cursor: pointer;
+          text-transform: uppercase;
+      }
+      
+      @media screen and (max-width: 600px){
+        .contact-form{
+          flex-direction: column;
+        }
+        .msg textarea{
+          height: 80px;
+        }
+        .input-fields,
+        .msg{
+          width: 100%;
+        }
+      }
+
+      
